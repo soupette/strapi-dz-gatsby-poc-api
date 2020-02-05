@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "body": {
+      "type": "dynamiczone",
+      "components": [
+        "blog.text",
+        "blog.content-with-image",
+        "blog.full-size-image"
+      ]
+    },
+    "category": {
+      "model": "category",
+      "via": "articles"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

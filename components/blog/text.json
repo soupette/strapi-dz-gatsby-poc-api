@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_blog_texts",
+  "info": {
+    "name": "text",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "connection": "default",
+  "collectionName": "components_default_bars",
+  "info": {
+    "name": "bar",
+    "icon": "arrow-alt-circle-down"
+  },
+  "options": {},
+  "attributes": {}
+}
